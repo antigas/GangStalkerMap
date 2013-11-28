@@ -66,7 +66,9 @@ public class MarkerDetailActivity extends Activity {
 			}
 			@Override  
 			protected void onPostExecute(Object result){
-				((ImageView) findViewById(R.id.iv_detail_picture)).setImageDrawable((Drawable)result);
+				if(result != null){
+					((ImageView) findViewById(R.id.iv_detail_picture)).setImageDrawable((Drawable)result);
+				}
 			}
 		};
 		task.execute();
