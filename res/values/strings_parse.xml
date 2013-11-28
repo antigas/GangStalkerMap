@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="parse_class_locationinfo">Locationinfo</string>
+    <string name="parse_column_location">Location</string>
+    <string name="parse_column_comment">Comment</string>
+    <string name="parse_column_email">Email</string>
+    <string name="parse_column_url">URL</string>
+    <string name="parse_column_date">Date</string>
+    <string name="parse_class_stalk_type">StalkType</string>
+    <string name="parse_column_type">Type</string>
+    <string name="parse_column_type_number">TypeNumber</string>
+    <string name="parse_column_country">Country</string>
+    <string name="parse_column_picture">Picture</string>
+    
+</resources>

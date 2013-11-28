@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name"> 集団ストーカーマップ</string>
+    <string name="action_settings">Settings</string>
+    <string name="regist_location_label">マップ登録</string>
+    <string name="regist_location_description">集団ストーカーの位置情報を登録できます</string>
+    <string name="view_map_label">集団ストーカーマップ</string>
+    <string name="view_map_description">集団ストーカーの情報を地図に表示</string>
+    <string name="setting_label">設定</string>
+    <string name="setting_description">アプリケーションの設定</string>
+    <string name="latitude_label">緯度</string>
+    <string name="longitude_label">経度</string>
+    <string name="hint_label">例：パッシング、仄めかし</string>
+    <string name="regist_label">登録</string>
+    <string name="regist_complete_label">登録完了！</string>
+    <string name="stalktype_label">ストーキング種別</string>
+    <string name="language">ja</string>
+    <string name="extend_regist_data_label">登録データに情報を追加</string>
+    <string name="email_label">Email</string>
+    <string name="url_label">URL</string>
+    <string name="email_hint">あなたのメールアドレス</string>
+    <string name="url_hint">あなたのブログアドレス</string>
+    <string name="address_label">住所</string>
+    <string name="no_location_label">現在地を取得中です</string>
+    <string name="twitter_label">登録データをツイートする</string>
+    <string name="authentication_label">認証を開始しますか？</string>
+    <string name="pin_input_label">PINコードを入力して下さい</string>
+    <string name="authentication_err_label">認証失敗</string>
+    <string name="authentication_complete_label">認証完了</string>
+    <string name="tweet_err_label">ツイート失敗</string>
+    <string name="btn_picture">撮影</string>
+    <string name="tweet_complete_label">ツイート完了</string>
+    <string name="picture_no_label">未撮影</string>
+    <string name="picture_yes_label">撮影済み</string>
+    <string name="picture_satus_label">添付画像</string>
+    <string name="datetime_label">日時</string>
+    
+</resources>

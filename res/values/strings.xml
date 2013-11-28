@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GangStalkerMap</string>
+    <string name="action_settings">Settings</string>
+    <string name="regist_location_label">Regist Map</string>
+    <string name="regist_location_description">you can register the location info of the GangStalker</string>
+    <string name="view_map_label">GangStalkersMap</string>
+    <string name="view_map_description">display on the map the info of the GangStalker</string>
+    <string name="setting_label">Setting</string>
+    <string name="setting_description">application setting</string>
+    <string name="latitude_label">Latitude</string>
+    <string name="longitude_label">Longitude</string>
+    <string name="hint_label">comment here</string>
+    <string name="regist_label">Register</string>
+    <string name="regist_complete_label">Registered!!</string>
+    <string name="stalktype_label">Stalk Type</string>
+    <string name="language">en</string>
+    <string name="extend_regist_data_label">Add information on registration data</string>
+    <string name="email_label">Email</string>
+    <string name="url_label">URL</string>
+    <string name="email_hint">your email</string>
+    <string name="url_hint">your blog address</string>
+    <string name="address_label">Address</string>
+    <string name="no_location_label">it is getting your location yet</string>
+    <string name="twitter_label">The Tweet registration data</string>
+    <string name="authentication_label">start authentication?</string>
+    <string name="pin_input_label">Please enter the PIN</string>
+    <string name="authentication_err_label">Authentication failure</string>
+    <string name="authentication_complete_label">Authentication is complete</string>
+    <string name="tweet_err_label">Tweet failure</string>
+    <string name="tweet_complete_label">Tweet is complete</string>
+    <string name="btn_picture">Photography</string>
+    <string name="picture_no_label">Not shooting</string>
+    <string name="picture_yes_label">Photographed</string>
+    <string name="picture_satus_label">Attach image</string>
+    <string name="datetime_label">DateTime</string>
+    
+</resources>

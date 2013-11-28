@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+     <string name="label_date_format">yyyy/MM/dd HH:mm:ss</string>
+     <string name="file_date_format">yyyy_MM_dd_HH_mm_ss</string>
+     <string name="file_extention">.jpg</string>
+     
+</resources>
