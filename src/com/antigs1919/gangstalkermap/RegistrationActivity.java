@@ -58,6 +58,11 @@ public class RegistrationActivity extends FragmentActivity implements OnClickLis
 		((Button) findViewById(R.id.btn_regist)).setOnClickListener(this);;
 		((Button) findViewById(R.id.btn_picture)).setOnClickListener(this);;
 		
+		SharedPreferences spf = getSharedPreferences("pref",MODE_PRIVATE);
+		if(spf.getBoolean(getResources().getResourceEntryName(R.id.cb_extend_data),false)){
+			((TextView)findViewById(R.id.et_attach_url)).setText(spf.getString(getResources().getResourceEntryName(R.id.et_url),null));
+		}
+
 		Spinner sp = (Spinner) findViewById(R.id.sp_stalktype);
 		set_stalktype(sp);
 	}
@@ -114,6 +119,7 @@ public class RegistrationActivity extends FragmentActivity implements OnClickLis
 					po.put(getString(R.string.parse_column_location),new ParseGeoPoint(m_lastlocation.getLatitude(),m_lastlocation.getLongitude()));
 					po.put(getString(R.string.parse_column_comment),((EditText) findViewById(R.id.et_comment)).getText().toString());
 					po.put(getString(R.string.parse_column_type),(String)((Spinner) findViewById(R.id.sp_stalktype)).getSelectedItem());
+					po.put(getString(R.string.parse_column_url),((EditText) findViewById(R.id.et_attach_url)).getText().toString());
 					put_extend_data(po);
 					tweet_comment();
 					if (m_picture != null){
@@ -166,7 +172,6 @@ public class RegistrationActivity extends FragmentActivity implements OnClickLis
 		
 		if(sp.getBoolean(getResources().getResourceEntryName(R.id.cb_extend_data),false)){
 			po.put(getString(R.string.parse_column_email),sp.getString(getResources().getResourceEntryName(R.id.et_email),null));
-			po.put(getString(R.string.parse_column_url),sp.getString(getResources().getResourceEntryName(R.id.et_url),null));
 		}
 	}
 	private void tweet_comment(){

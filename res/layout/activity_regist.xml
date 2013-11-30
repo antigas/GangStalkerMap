@@ -73,6 +73,9 @@
 
         </TableRow>
         
+
+        
+        
     </TableLayout>
 
     <TableLayout
@@ -88,7 +91,8 @@
                 android:id="@+id/tv_picture_status"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/picture_satus_label" />
+                android:text="@string/picture_satus_label"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
 
             <TextView
                 android:id="@+id/tv_picture_value"
@@ -105,6 +109,34 @@
                 android:text="@string/btn_picture" />
         </TableRow>
 
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1" >
+        
+                <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_attach_url"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/url_attach_label"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/et_attach_url"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/url_attach_hint"
+                android:inputType="textUri" />
+
+        </TableRow>
+        
     </TableLayout>
 
     <EditText

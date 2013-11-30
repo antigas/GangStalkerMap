@@ -37,7 +37,7 @@ public class PinActivity extends Activity implements OnClickListener {
 				// TODO Auto-generated method stub
 				RequestToken sRequestToken;
 				m_Oauth = new OAuthAuthorization(ConfigurationContext.getInstance());
-				m_Oauth.setOAuthConsumer("clientKey","consumerSecret");
+				m_Oauth.setOAuthConsumer("consumerKey","consumerSecret");
 
 				try {
 					sRequestToken = m_Oauth.getOAuthRequestToken();

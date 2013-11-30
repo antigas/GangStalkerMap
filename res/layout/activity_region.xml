@@ -2,10 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:columnCount="1"
-    android:gravity="center_horizontal"
     android:orientation="vertical" >
-
+    
     <TableLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -17,39 +15,31 @@
             android:layout_height="wrap_content" >
 
             <TextView
-                android:id="@+id/tv_pin"
+                android:id="@+id/tv_region_lebel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="@string/pin_input_label"
+                android:text="@string/gang_stalking_level_label"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
 
         </TableRow>
 
         <TableRow
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
 
-            <EditText
-                android:id="@+id/et_pin"
+            <TextView
+                android:id="@+id/tv_region_lebel_value"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:ems="10"
-                android:maxLines="1" />
+                android:text="00"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="40sp" />
 
-        </TableRow>
-
-        <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
-
-            <Button
-                android:id="@+id/btn_get_token"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@android:string/ok" />
         </TableRow>
     </TableLayout>
-
+    
+    
 </RelativeLayout>

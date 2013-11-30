@@ -9,6 +9,8 @@
     <string name="view_map_description">display on the map the info of the GangStalker</string>
     <string name="setting_label">Setting</string>
     <string name="setting_description">application setting</string>
+    <string name="region_level_label">GangStalkerLevel</string>
+    <string name="region_level_description">view GangStalker level your region</string>
     <string name="latitude_label">Latitude</string>
     <string name="longitude_label">Longitude</string>
     <string name="hint_label">comment here</string>
@@ -35,5 +37,8 @@
     <string name="picture_yes_label">Photographed</string>
     <string name="picture_satus_label">Attach image</string>
     <string name="datetime_label">DateTime</string>
+    <string name="gang_stalking_level_label">Gang stalking level in your region</string>
+    <string name="url_attach_hint">http://hoge.com/hoge.mp4</string>
+    <string name="url_attach_label">Attach URL</string>
     
 </resources>

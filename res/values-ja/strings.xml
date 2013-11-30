@@ -9,9 +9,11 @@
     <string name="view_map_description">集団ストーカーの情報を地図に表示</string>
     <string name="setting_label">設定</string>
     <string name="setting_description">アプリケーションの設定</string>
+    <string name="region_level_label">集団ストーカーレベル</string>
+    <string name="region_level_description">あなたの地域の集団ストーカーレベルを表示します</string>
     <string name="latitude_label">緯度</string>
     <string name="longitude_label">経度</string>
-    <string name="hint_label">例：パッシング、仄めかし</string>
+    <string name="hint_label">ここにコメントを入力</string>
     <string name="regist_label">登録</string>
     <string name="regist_complete_label">登録完了！</string>
     <string name="stalktype_label">ストーキング種別</string>
@@ -35,5 +37,8 @@
     <string name="picture_yes_label">撮影済み</string>
     <string name="picture_satus_label">添付画像</string>
     <string name="datetime_label">日時</string>
+    <string name="gang_stalking_level_label">あなたの地域の集団ストーカーレベル</string>
+    <string name="url_attach_hint">http://hoge.com/hoge.mp4</string>
+    <string name="url_attach_label">添付URL</string>
     
 </resources>

@@ -62,6 +62,7 @@ public class MapActivity extends FragmentActivity implements OnMarkerClickListen
 					m_email = (String)po.get(getString(R.string.parse_column_email));
 					m_url = (String)po.get(getString(R.string.parse_column_url));
 					m_comment = (String)po.get(getString(R.string.parse_column_comment));
+					m_image_url = null;
 					ParseFile image_file = (ParseFile)po.get(getString(R.string.parse_column_picture));
 					if(image_file != null){
 						m_image_url = image_file.getUrl();
@@ -82,6 +83,7 @@ public class MapActivity extends FragmentActivity implements OnMarkerClickListen
 					break;
 				}
 			}
+			((ImageView)(m_infowindow_view.findViewById(R.id.iv_picture))).setImageBitmap(null);
 			
 			((TextView)(m_infowindow_view.findViewById(R.id.tv_title))).setText(
 					m_date_str + ":" + m_type
