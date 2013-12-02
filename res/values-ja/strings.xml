@@ -40,5 +40,6 @@
     <string name="gang_stalking_level_label">あなたの地域の集団ストーカーレベル</string>
     <string name="url_attach_hint">http://hoge.com/hoge.mp4</string>
     <string name="url_attach_label">添付URL</string>
+    <string name="gps_invaild_label">GPSが無効です</string>
     
 </resources>

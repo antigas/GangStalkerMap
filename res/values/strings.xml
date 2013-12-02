@@ -40,5 +40,6 @@
     <string name="gang_stalking_level_label">Gang stalking level in your region</string>
     <string name="url_attach_hint">http://hoge.com/hoge.mp4</string>
     <string name="url_attach_label">Attach URL</string>
+    <string name="gps_invaild_label">GPS is invalid</string>
     
 </resources>

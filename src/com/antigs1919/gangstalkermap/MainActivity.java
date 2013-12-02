@@ -3,6 +3,8 @@ package com.antigs1919.gangstalkermap;
 
 import com.parse.Parse;
 import android.os.Bundle;
+import android.provider.Settings;
+import android.provider.Settings.Secure;
 import android.app.ListActivity;
 import android.content.Context;
 import android.content.Intent;
@@ -12,6 +14,9 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
+
+import com.antigs1919.gangstalkermap.Constants;
 
 public class MainActivity extends ListActivity {
 
@@ -46,9 +51,14 @@ public class MainActivity extends ListActivity {
 		ListAdapter adapter = new CustomArrayAdapter(this,MapDetailsList.MAPS);
 		setListAdapter(adapter);
 		
-		Parse.initialize(this, "applicationId", "clientKey");
+		Parse.initialize(this, Constants.PARSE_APPLICATION_ID, Constants.PARSE_CLIENT_KEY);
+		String gpsStatus = android.provider.Settings.Secure.getString(getContentResolver(), Secure.LOCATION_PROVIDERS_ALLOWED);
+		if (gpsStatus.indexOf("gps", 0) < 0) {
+			Toast.makeText(this, getString(R.string.gps_invaild_label),Toast.LENGTH_LONG).show();
+		}
 	}
-
+	
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.

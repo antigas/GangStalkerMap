@@ -1,7 +1,6 @@
 package com.antigs1919.gangstalkermap;
 
 
-import com.parse.CountCallback;
 import com.parse.ParseException;
 import com.parse.ParseGeoPoint;
 import com.parse.ParseObject;
@@ -17,13 +16,14 @@ import android.support.v4.app.FragmentActivity;
 import android.widget.TextView;
 
 public class RegionLevelActivity extends FragmentActivity implements LocationListener {
+	LocationManager mLocationManager;
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_region);
 		
-		LocationManager mLocationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+		mLocationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 		Criteria criteria = new Criteria();
 		criteria.setAccuracy(Criteria.ACCURACY_COARSE);
 		criteria.setPowerRequirement(Criteria.POWER_LOW);
@@ -35,23 +35,19 @@ public class RegionLevelActivity extends FragmentActivity implements LocationLis
 	@Override
 	public void onLocationChanged(Location location) {
 		// TODO Auto-generated method stub
+		mLocationManager.removeUpdates(this);
 		ParseQuery<ParseObject> pq = ParseQuery.getQuery(getString(R.string.parse_class_locationinfo));
 		pq.whereWithinKilometers(getString(R.string.parse_column_location)
 				, new ParseGeoPoint(location.getLatitude(), location.getLongitude())
 				, 15.0);
 		
-		pq.countInBackground(new CountCallback(){
-			
-			@Override
-			public void done(int count, ParseException e) {
-				// TODO Auto-generated method stub
-				if(e==null){
-					((TextView)findViewById(R.id.tv_region_lebel_value)).setText(String.valueOf(count));
-				}else{
-					e.printStackTrace();
-				}
-			}
-		});
+		try {
+			int count = pq.count();
+			((TextView)findViewById(R.id.tv_region_lebel_value)).setText(String.valueOf(count));
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	@Override

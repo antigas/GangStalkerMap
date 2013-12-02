@@ -193,7 +193,7 @@ public class RegistrationActivity extends FragmentActivity implements OnClickLis
 					AccessToken token = new AccessToken(
 							sp.getString("access_token",null )
 							,sp.getString("access_token_secret",null));
-					tw.setOAuthConsumer("Consumer key","Consumer key secret");
+					tw.setOAuthConsumer(Constants.TWITTER_CONSUMER_KEY,Constants.TWITTER_CONSUMER_SECRET);
 					tw.setOAuthAccessToken(token);
 					
 					try {

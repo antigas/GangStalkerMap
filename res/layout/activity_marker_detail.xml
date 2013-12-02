@@ -71,6 +71,13 @@
 
         </TableRow>
         
+    </TableLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1" >
+        
+        
         <TableRow
             android:id="@+id/tableRow"
             android:layout_width="wrap_content"
@@ -143,6 +150,6 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="right|bottom"/>
         </TableRow>
-</TableLayout>
+    </TableLayout>
 
 </LinearLayout>

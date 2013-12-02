@@ -37,7 +37,7 @@ public class PinActivity extends Activity implements OnClickListener {
 				// TODO Auto-generated method stub
 				RequestToken sRequestToken;
 				m_Oauth = new OAuthAuthorization(ConfigurationContext.getInstance());
-				m_Oauth.setOAuthConsumer("consumerKey","consumerSecret");
+				m_Oauth.setOAuthConsumer(Constants.TWITTER_CONSUMER_KEY,Constants.TWITTER_CONSUMER_SECRET);
 
 				try {
 					sRequestToken = m_Oauth.getOAuthRequestToken();

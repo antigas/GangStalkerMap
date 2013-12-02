@@ -79,7 +79,7 @@ public class MarkerDetailActivity extends Activity {
 		Geocoder geocoder = new Geocoder(this,Locale.getDefault());
 		StringBuffer strbuf = new StringBuffer();
 		try{
-			List<Address> list_address = geocoder.getFromLocation(latitude,longitude,5);
+			List<Address> list_address = geocoder.getFromLocation(latitude,longitude,1);
 			for(Address address:list_address){
 				int max_i = address.getMaxAddressLineIndex();
 				for(int i=0;i <= max_i;i++){
